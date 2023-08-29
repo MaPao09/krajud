@@ -1,0 +1,351 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-image: linear-gradient(1deg, #e7a67b, #FFFFFF);
+    margin: 0;
+    
+      
+}
+
+footer {
+    background-color: rgb(159, 159, 159);
+    padding: 10px 0;
+    text-align: center;
+    border: #000 solid 2px;
+
+}
+
+.container {
+    perspective: 1000px;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+/* -----TOP image----- */
+
+.constrain {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  section.hero {
+    background-image: url('https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?cs=srgb&dl=pexels-kellie-churchman-1001682.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  section.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  section.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  section.hero .btn {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  section.featured-courses {
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+.navbar {
+    border-bottom: 2px solid rgb(216, 83, 35);
+    height: 80px;
+}
+
+.sub-footer {
+    background-color: #c1c1c199;
+    padding: 20px 0;
+    border: #000 solid 2px;
+    text-align: center;
+}
+
+/* -----image----- */
+
+.carousel-inner,
+.row {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.row img,
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    /* Remove fixed height */
+    object-fit: contain;
+    /* Change to "contain" */
+    border-radius: 10px;
+
+}
+
+.row .img-fluid {
+    filter: grayscale(100%);
+    /* Apply grayscale filter */
+}
+
+.row .img-fluid:hover {
+    filter: none;
+    /* Remove filter on hover */
+}
+
+.container {
+    width: 70%;
+    /* Set width to 98% */
+    max-width: 100%;
+    /* Ensure it doesn't exceed the viewport width */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.carousel-indicators li {
+    background-color: #bbb;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: #333;
+}
+
+
+
+.position-relative {
+    position: relative;
+}
+
+.image-caption {
+    position: absolute;
+    top: 50%;
+    /* วางข้อความให้อยู่ตรงกลางแนวตั้ง */
+    left: 50%;
+    /* วางข้อความให้อยู่ตรงกลางแนวนอน */
+    transform: translate(-50%, -50%);
+    /* ย้ายข้อความให้อยู่ตรงกลางทั้งแนวตั้งและแนวนอน */
+
+    color: #fff;
+    /* สีข้อความ */
+    padding: 10px;
+    /* ระยะห่างของข้อความจากขอบ */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 99%;
+        /* Set width to 98% */
+        max-width: 100%;
+        /* Ensure it doesn't exceed the viewport width */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+    }
+
+    .navbar {
+
+        height: auto;
+        
+    }
+
+    .col-12 {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .col-md-6 {
+        flex-basis: 50% !important;
+        max-width: 50% !important;
+    }
+
+
+}
+
+/* -----Roll Section----- */
+.container.border-container {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+
+.mt-5 {
+    background-color: #cbcbcb95;
+    
+    /* Set the spacing inside the mt-5 div */
+}
+
+.mt-6 {
+    background-color: #ffffffd6;
+    margin: auto;
+    /* Set the spacing inside the mt-5 div */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.txtbox {
+    width: 400px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.txtbox img {
+    width: 250px;
+    height: 250px;
+}
+
+
+
+/* -----ข่าวสาร----- */
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.news {
+    border: 2px solid #000000;
+    padding: 30px 30px;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+.news:hover {
+    transform: scale(1.05);
+}
+
+.news h2 {
+    margin-bottom: 10px;
+}
+
+.news p {
+    margin-bottom: 20px;
+}
+
+.news img {
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+}
+
+.news-content {
+    flex-grow: 1;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #ccc;
+}
+
+.vertical-line {
+    width: 2px; 
+    background-color: #000; 
+    margin: 0 10px; 
+}
+
+.page-number {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.page-number.active {
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .news {
+        width: 800px;
+    }
+}
+
+@media (max-width: 992px) {
+    .news {
+        width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .news {
+        width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .news {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .news {
+        width: 250px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .news {
+        width: 200px;
+        padding: 15px;
+    }
+}
+
+#map {
+    width: 900px;
+    height: 500px;
+    border: 3px solid #000000;
+    margin: 10px;
+}
+
+.fa {
+    margin: 10px;
+}

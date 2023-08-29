@@ -1,0 +1,93 @@
+
+.masonry .grid {
+    display: inline-block;
+    margin-bottom: 16px;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    /* เพิ่ม */
+    justify-content: center;
+    /* เพิ่ม */
+    align-items: center;
+    /* เพิ่ม */
+}
+
+.masonry .grid:before {
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.masonry .grid img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    /* เพิ่มบรรทัดนี้ */
+
+}
+
+
+
+
+.masonry .grid_body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: "Apple Chancery", cursive;
+
+}
+
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.masonry {
+    columns: 4;
+    column-gap: 16px;
+    width: 100%;
+    /* เพิ่มบรรทัดนี้ */
+background-color: #fff;
+padding: 7%;
+}
+
+.row {
+    display: flex;
+    /* เพิ่ม */
+    flex-wrap: wrap;
+    /* เพิ่ม */
+}
+
+
+@media (max-width: 1200px) {
+    .masonry {
+        columns: 3;
+
+    }
+
+    @media (max-width: 992px) {
+
+        .masonry {
+            columns: 3;
+
+        }
+    }
+}
+
+@media (max-width: 532px) {
+    .masonry {
+
+        columns: 2;
+    }
+}
